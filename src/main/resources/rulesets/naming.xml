@@ -10,7 +10,7 @@ The Naming Ruleset contains a collection of rules about names - too long, too sh
 
     <rule name="ShortVariable"
           since="0.2"
-          message="Avoid variables with short names like {0}. Configured minimum length is {1}."
+          message="{0} のような短い名前の利用を避けてください。閾値は {1} に設定されています。"
           class="PHPMD\Rule\Naming\ShortVariable"
           externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable">
         <description>
@@ -38,7 +38,7 @@ class Something {
 
     <rule name="LongVariable"
           since="0.2"
-          message="Avoid excessively long variable names like {0}. Keep variable name length under {1}."
+          message="{0} のようなとても長い名前の利用を避けてください。閾値は {1} に設定されています。"
           class="PHPMD\Rule\Naming\LongVariable"
           externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable">
         <description>
@@ -66,7 +66,7 @@ class Something {
 
     <rule name="ShortMethodName"
           since="0.2"
-          message="Avoid using short method names like {0}::{1}(). The configured minimum method name length is {2}."
+          message="{0}#{1} のような短いメソッド名を避けてください。閾値は {2} に設定されています。"
           class="PHPMD\Rule\Naming\ShortMethodName"
           externalInfoUrl="http://phpmd.org/rules/naming.html#shortmethodname">
         <description>
@@ -89,7 +89,7 @@ class ShortMethod {
 
     <rule name="ConstructorWithNameAsEnclosingClass"
           since="0.2"
-          message="Classes should not have a constructor method with the same name as the class"
+          message="クラスはクラス名と同じメソッド名のコンストラクタを持つべきではありません。"
           class="PHPMD\Rule\Naming\ConstructorWithNameAsEnclosingClass"
           externalInfoUrl="http://phpmd.org/rules/naming.html#constructorwithnameasenclosingclass">
         <description>
@@ -111,7 +111,7 @@ class MyClass {
 
     <rule name="ConstantNamingConventions"
           since="0.2"
-          message="Constant {0} should be defined in uppercase"
+          message="定数 {0} は大文字で宣言されるべきです。"
           class="PHPMD\Rule\Naming\ConstantNamingConventions"
           externalInfoUrl="http://phpmd.org/rules/naming.html#constantnamingconventions">
         <description>
@@ -131,7 +131,7 @@ class Foo {
 
     <rule name="BooleanGetMethodName"
           since="0.2"
-          message="The '{0}()' method which returns a boolean should be named 'is...()' or 'has...()'"
+          message="boolean を返すメソッド {0} の名前は 'is...()' や 'has...()' とするべきです。"
           class="PHPMD\Rule\Naming\BooleanGetMethodName"
           externalInfoUrl="http://phpmd.org/rules/naming.html#booleangetmethodname">
         <description>

@@ -11,7 +11,7 @@ The Unused Code Ruleset contains a collection of rules that find unused code.
 
     <rule name="UnusedPrivateField"
           since="0.2"
-          message="Avoid unused private fields such as '{0}'."
+          message="{0} のような未使用のプライベートフィールドを避けてください。"
           class="PHPMD\Rule\UnusedPrivateField"
           externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatefield">
         <description>
@@ -36,7 +36,7 @@ class Something
 
     <rule name="UnusedLocalVariable"
           since="0.2"
-          message="Avoid unused local variables such as '{0}'."
+          message="{0} のような未使用のローカル変数を避けてください。"
           class="PHPMD\Rule\UnusedLocalVariable"
           externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable">
         <description>
@@ -63,7 +63,7 @@ class Foo {
 
     <rule name="UnusedPrivateMethod"
           since="0.2"
-          message="Avoid unused private methods such as '{0}'."
+          message="{0} のような未使用のプライベートメソッドを避けてください。"
           class="PHPMD\Rule\UnusedPrivateMethod"
           externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatemethod">
         <description>
@@ -82,7 +82,7 @@ class Something
 
     <rule name="UnusedFormalParameter"
           since="0.2"
-          message="Avoid unused parameters such as '{0}'."
+          message="{0} のような未使用の引数を避けてください。"
           class="PHPMD\Rule\UnusedFormalParameter"
           externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter">
         <description>

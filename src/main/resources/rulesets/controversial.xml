@@ -12,7 +12,7 @@ This ruleset contains a collection of controversial rules.
 
     <rule name="Superglobals"
           since="0.2"
-          message = "{0} accesses the super-global variable {1}."
+          message="{0} は スーパーグローバル変数 {1} にアクセスしています。"
           class="PHPMD\Rule\Controversial\Superglobals"
           externalInfoUrl="#">
         <description>
@@ -36,7 +36,7 @@ class Foo {
 
     <rule name="CamelCaseClassName"
           since="0.2"
-          message = "The class {0} is not named in CamelCase."
+          message="{0} クラスは CamelCase ではありません。"
           class="PHPMD\Rule\Controversial\CamelCaseClassName"
           externalInfoUrl="#">
         <description>
@@ -56,7 +56,7 @@ class class_name {
 
     <rule name="CamelCasePropertyName"
           since="0.2"
-          message = "The property {0} is not named in camelCase."
+          message="{0} プロパティは camelCase ではありません。"
           class="PHPMD\Rule\Controversial\CamelCasePropertyName"
           externalInfoUrl="#">
         <description>
@@ -82,7 +82,7 @@ class ClassName {
 
     <rule name="CamelCaseMethodName"
           since="0.2"
-          message = "The method {0} is not named in camelCase."
+          message="{0} メソッドは camelCase ではありません。"
           class="PHPMD\Rule\Controversial\CamelCaseMethodName"
           externalInfoUrl="#">
         <description>
@@ -109,7 +109,7 @@ class ClassName {
 
     <rule name="CamelCaseParameterName"
           since="0.2"
-          message = "The parameter {0} is not named in camelCase."
+          message="{0} パラメータは camelCase ではありません。"
           class="PHPMD\Rule\Controversial\CamelCaseParameterName"
           externalInfoUrl="#">
         <description>
@@ -131,7 +131,7 @@ class ClassName {
 
     <rule name="CamelCaseVariableName"
           since="0.2"
-          message = "The variable {0} is not named in camelCase."
+          message="{0} 変数は camelCase ではありません。"
           class="PHPMD\Rule\Controversial\CamelCaseVariableName"
           externalInfoUrl="#">
         <description>

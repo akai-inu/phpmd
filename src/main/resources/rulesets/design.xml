@@ -12,7 +12,7 @@ The Code Size Ruleset contains a collection of rules that find software design r
 
     <rule name="ExitExpression"
           since="0.2"
-          message = "The {0} {1}() contains an exit expression."
+          message="{0}#{1} メソッドは exit 構文を利用しています。"
           class="PHPMD\Rule\Design\ExitExpression"
           externalInfoUrl="http://phpmd.org/rules/design.html#exitexpression">
         <description>
@@ -39,7 +39,7 @@ class Foo {
 
     <rule name="EvalExpression"
           since="0.2"
-          message = "The {0} {1}() contains an eval expression."
+          message="{0}#{1} メソッドは eval 構文を利用しています。"
           class="PHPMD\Rule\Design\EvalExpression"
           externalInfoUrl="http://phpmd.org/rules/design.html#evalexpression">
         <description>
@@ -66,7 +66,7 @@ class Foo {
 
     <rule name="GotoStatement"
           since="1.1.0"
-          message="The {0} {1}() utilizes a goto statement."
+          message="{0}#{1} メソッドは goto 構文を利用しています。"
           class="PHPMD\Rule\Design\GotoStatement"
           externalInfoUrl="http://phpmd.org/rules/design.html#gotostatement">
         <description>
@@ -105,7 +105,7 @@ class Foo {
 
     <rule name="NumberOfChildren"
           since="0.2"
-          message = "The {0} {1} has {2} children. Consider to rebalance this class hierarchy to keep number of children under {3}."
+          message="{0} {1} は {2} 個の継承先がいます。 {3} 個以内に減らしクラス階層をバランス良くすることを考えてください。"
           class="PHPMD\Rule\Design\NumberOfChildren"
           externalInfoUrl="http://phpmd.org/rules/design.html#numberofchildren">
         <description>
@@ -123,7 +123,7 @@ class hierarchy. You should consider to refactor this class hierarchy.
 
     <rule name="DepthOfInheritance"
           since="0.2"
-          message = "The {0} {1} has {2} parents. Consider to reduce the depth of this class hierarchy to under {3}."
+          message="{0} {1} は {2} 個の継承元を持っています。 {3} 個以内にしクラス階層の深度を減らすことを考えてください。"
           class="PHPMD\Rule\Design\DepthOfInheritance"
           externalInfoUrl="http://phpmd.org/rules/design.html#depthofinheritance">
         <description>
@@ -141,7 +141,7 @@ hierarchy. You should consider to refactor this class hierarchy.
 
     <rule name="CouplingBetweenObjects"
           since="1.1.0"
-          message="The class {0} has a coupling between objects value of {1}. Consider to reduce the number of dependencies under {2}."
+          message="{0} クラスは {1} 個のオブジェクトを利用しています。 {2} 個以内に依存を減らすことを考えてください。"
           class="PHPMD\Rule\Design\CouplingBetweenObjects"
           externalInfoUrl="http://phpmd.org/rules/design.html#couplingbetweenobjects">
         <description>

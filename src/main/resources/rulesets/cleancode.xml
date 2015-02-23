@@ -12,7 +12,7 @@ The Clean Code ruleset contains rules that enforce a clean code base. This inclu
 
     <rule name="BooleanArgumentFlag"
           since="1.4.0"
-          message="The method {0} has a boolean flag argument {1}, which is a certain sign of a Single Responsibility Principle violation."
+          message="メソッド {0} は {1} という boolean 引数を持っていますが、これは Single Responsibility Principle に違反しているサインです。"
           class="PHPMD\Rule\CleanCode\BooleanArgumentFlag"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#booleanargumentflag">
         <description>
@@ -37,7 +37,7 @@ class Foo {
 
     <rule name="ElseExpression"
           since="1.4.0"
-          message="The method {0} uses an else expression. Else is never necessary and you can simplify the code to work without else."
+          message="{0} メソッドは else 構文を利用しています。 Else は必要なく、 else なしの単純なコードでも動作させられます。"
           class="PHPMD\Rule\CleanCode\ElseExpression"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#eleseexpression">
         <description>
@@ -70,7 +70,7 @@ class Foo
 
     <rule name="StaticAccess"
           since="1.4.0"
-          message="Avoid using static access to class '{0}' in method '{1}'."
+          message="メソッド {1} 内で クラス {0} に静的アクセスすることは避けるべきです。"
           class="PHPMD\Rule\CleanCode\StaticAccess"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#staticaccess">
         <description>
